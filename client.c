@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include <string.h>
 #include <stdio.h>
 #include <sys/socket.h>
@@ -43,5 +44,7 @@ printf("Tak berjaya baca");
 
 puts("This server reply: \n");
 puts(reply);
+
+close(socd);
 return 0;
 }
